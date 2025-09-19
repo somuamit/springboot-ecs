@@ -1,5 +1,5 @@
 # Use Amazon Corretto (AWS-hosted JDK 17 image)
-FROM public.ecr.aws/amazoncorretto/amazoncorretto:17-alpine
+FROM public.ecr.aws/docker/library/amazoncorretto:17-alpine
 
 # Set working directory inside container
 WORKDIR /app

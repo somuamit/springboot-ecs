@@ -12,7 +12,7 @@ public class HelloController {
 	
 	@GetMapping("/greetings")
 	public String sayHi() {
-		return "Welcome to ECS ECR World!";
+		return "Welcome to ECS ECR Testing !";
 	}
 	@GetMapping
 	public String demoapp() {

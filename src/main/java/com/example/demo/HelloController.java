@@ -24,6 +24,6 @@ public class HelloController {
 	}
 	@GetMapping("/newapi")
 	public String newapi() {
-		return "Hi This is new api !";
+		return "Hi This is new api for amit testing !";
 	}
 }

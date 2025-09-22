@@ -7,12 +7,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 	@GetMapping("/hello")
 	public String sayHello() {
-		return "Say Hello to ECR ECS!";
+		return "Say Hello to ECR ECS !";
 	}
 	
 	@GetMapping("/greetings")
 	public String sayHi() {
-		return "Welcome to AWS ECS Testing... !";
+		return "Greetings, Welcome to AWS ECS Testing... !";
 	}
 	@GetMapping
 	public String demoapp() {

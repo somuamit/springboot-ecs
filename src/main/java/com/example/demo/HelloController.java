@@ -20,6 +20,6 @@ public class HelloController {
 	}
 	@GetMapping("/testapi")
 	public String testapi() {
-		return "Hi This is test api... !";
+		return "Hi This is test api for CI/CD !";
 	}
 }

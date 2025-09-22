@@ -7,7 +7,7 @@ phases:
       - echo Logging in to Amazon ECR...
       - aws --version
       - REPOSITORY_URI=336815833509.dkr.ecr.ap-south-1.amazonaws.com/myspringdemoecr
-      - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin $REPOSITORY_URI
+      - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 336815833509.dkr.ecr.ap-south-1.amazonaws.com
       - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
       - IMAGE_TAG=build-$(echo $CODEBUILD_BUILD_ID | awk -F":" '{print $2}')
   build:
@@ -35,5 +35,5 @@ phases:
 artifacts:
   files:
     - imagedefinitions.json
-    - target/demo-0.0.1-SNAPSHOT.jar
+    - target/demo-0.0.1-SNAPSHOT.jar"
 

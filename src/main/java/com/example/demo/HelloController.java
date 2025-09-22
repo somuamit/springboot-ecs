@@ -22,4 +22,8 @@ public class HelloController {
 	public String testapi() {
 		return "Hi This is test api for CI/CD !";
 	}
+	@GetMapping("/newapi")
+	public String newapi() {
+		return "Hi This is new api for ECS !";
+	}
 }

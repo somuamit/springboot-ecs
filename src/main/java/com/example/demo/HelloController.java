@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 	@GetMapping("/hello")
 	public String sayHello() {
-		return "Say Hello to ECR ECS !";
+		return "Say Hello to";
 	}
 	
 	@GetMapping("/greetings")
@@ -17,5 +17,9 @@ public class HelloController {
 	@GetMapping
 	public String demoapp() {
 		return "Welcome to Demo app!";
+	}
+	@GetMapping("/testapi")
+	public String testapi() {
+		return "Hi This is test api... !";
 	}
 }
